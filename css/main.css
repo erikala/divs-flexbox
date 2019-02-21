@@ -103,16 +103,45 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
+header, footer {
+  height: 80px;
+  width: 100%;
+}
+
+header, footer, main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+header h1, main span {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  color: #f2f2f2;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+.wrapper {
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .div-1, .div-2, .div-3 {
@@ -120,11 +149,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 25%;
   color: #fff;
   line-height: 1.5em;
   font-size: 1em;
-  text-align:justify;
+  text-align:left;
   padding: 10px 30px 10px 30px;
   background-color: #282a2d;
   height: auto;
